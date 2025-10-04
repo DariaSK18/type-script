@@ -1,6 +1,15 @@
 "use strict";
 // alert('hello world')
-// Задача 1. У localStorage зберігається об’єкт у форматі JSON з ключем «data». Проаналізувати значення поля «field2». Якщо рядок – то вивести довжину, якщо число – то визначити чи є парним.
+const userData = {
+    name: 'Mitch',
+    age: 19
+};
+if (userData) {
+    localStorage.setItem('data', JSON.stringify(userData));
+}
+// function analyzeField(): number | string {
+//     const field2 = localStorage
+// }
 // Задача 2. У localStorage зберігається об’єкт у форматі JSON з ключем «data». Вивести на екран усі поля та їх значення.
 //---- Задача 3. Вводиться назва продукту, ціна одиниці та кількість для 2-х видів товарів. Вивести чек про купівлю.
 // const productTitleOne: string = prompt('Product title 1')!
@@ -77,7 +86,7 @@
 //     else strCount++
 // }
 // document.write(`Amount of stings: ${strCount} <br> Amount of numbers: ${numCount} <hr> Last value: ${val!.toString()}`)
-// Задача 6. Вводиться сума грошей і позначення валюти. Потрібно перевести у інші валюти ("USD" ,  "EUR" , "UAH"). Тобто якщо вводять гривні, то перевести у долари і євро. А якщо вводять долари, то перевести у гривні  і євро. Курси валют – це константи. 
+//---- Задача 6. Вводиться сума грошей і позначення валюти. Потрібно перевести у інші валюти ("USD" ,  "EUR" , "UAH"). Тобто якщо вводять гривні, то перевести у долари і євро. А якщо вводять долари, то перевести у гривні  і євро. Курси валют – це константи. 
 // type Currency = "USD" | "EUR" | "UAH"
 // const currency: Currency[] = ["USD", "EUR", "UAH"]
 // // const currency: string[] = ["USD", "EUR", "UAH"]
