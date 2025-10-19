@@ -1,7 +1,5 @@
 //---- Задача 2. Створити функцію, яка дозволяє знайти або останню цифру числа, або останній символ числа.
 
-// const userVal = prompt('Enter anything')
-
 function getLastSymbol(val: number): number;
 function getLastSymbol(val: string): string;
 
